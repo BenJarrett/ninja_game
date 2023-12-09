@@ -1,3 +1,4 @@
+# trunk-ignore(ruff/F401)
 import pygame
 
 
@@ -14,7 +15,7 @@ class PhysicsEntity:
     def update(self, movement=(0, 0)):
         frame_movement = (
             movement[0] + self.velocity[0],
-            movement[1] + self.velocity[1]
+            movement[1] + self.velocity[1],
         )
 
         self.pos[0] += frame_movement[0]
